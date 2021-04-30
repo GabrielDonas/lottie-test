@@ -1,9 +1,9 @@
-var bodymovin = require("bodymovin");
+//const bodymovin = require("bodymovin");
 
-var svgContainer = document.getElementById("svgContainer");
-var animItem = bodymovin.loadAnimation({
-  wrapper: svgContainer,
-  animType: "svg",
+const animation = bodymovin.loadAnimation({
+  container: document.getElementById("svgContainer"),
+  renderer: "svg",
   loop: true,
-  path: "https://labs.nearpod.com/bodymovin/demo/markus/isometric/markus2.json",
+  autoplay: true,
+  path: "../src/data.json",
 });
