@@ -9,6 +9,7 @@ body {
   justify-items: center;
 }
 
-#main {
-  width: 1000px;
+#svgContainer {
+  width: 200px;
+  height: 200px;
 }
