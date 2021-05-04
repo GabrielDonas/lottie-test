@@ -13,16 +13,18 @@ const animation = lottie.loadAnimation({
 
 const startAnimation = () => {
   animation.play();
+  animation.setSpeed(0.7);
 };
 
 const stopAnimation = () => {
   animation.pause();
 };
 
-const test = () => {
+const playAnimation = () => {
   animation.goToAndPlay(0);
+  animation.setSpeed(0.7);
 };
-container.addEventListener("mouseover", startAnimation);
+container.addEventListener("click", playAnimation);
 //container.addEventListener("mouseover", startAnimation);
 //container.addEventListener("mouseout", stopAnimation);
 
